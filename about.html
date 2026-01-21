@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About KapStone Corporate - Learn about our company, mission, and values">
+    <meta name="keywords" content="KapStone, about us, corporate, company, mission, values">
+    <meta name="author" content="KapStone Corporate">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About Us - KapStone Corporate">
+    <meta property="og:description" content="Learn about our company, mission, and values">
+    <meta property="og:type" content="website">
+    
+    <title>About Us - KapStone Corporate</title>
+    
+    <!-- Google Fonts - Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+     <!-- Header -->
+     <header class="main-header">
+        <div class="container-fluid container-custom p-0">
+            <nav class="navbar navbar-expand-lg navbar-light p-0 justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                    <a class="navbar-brand logo-container p-0 m-0" href="index.html">
+                        <img src="http://localhost:3845/assets/55a47669dfbab953ecec027263f6f8c12168ffe6.png" alt="KapStone Logo" class="logo-img">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="d-none d-lg-flex align-items-center">
+                    <ul class="nav-links mb-0">
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="why-us.html" class="nav-link">Why Us</a></li>
+                        <li><a href="founders-story.html" class="nav-link">Founders</a></li>
+                        <li><a href="tech-projects.html" class="nav-link">Tech Projects</a></li>
+                        <li><a href="connect.html" class="btn-primary">Connect Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn d-lg-none" type="button" onclick="toggleMobileMenu()">
+                    <img src="http://localhost:3845/assets/89ead1a602f09b63c629881b45b2bf5ed9fc2d43.svg" alt="Menu" width="28" height="28">
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <a class="logo-container" href="index.html">
+                    <img src="http://localhost:3845/assets/55a47669dfbab953ecec027263f6f8c12168ffe6.png" alt="KapStone Logo" height="36">
+                </a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <img src="http://localhost:3845/assets/06ec16e3e77d5820d084005c77ac0b953e7208cc.svg" alt="Close" width="28" height="28">
+                </button>
+            </div>
+            
+            <div class="d-flex flex-column justify-content-between h-100">
+                <ul class="mobile-nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="why-us.html" class="nav-link">Why Us</a></li>
+                    <li><a href="founders-story.html" class="nav-link">Founders</a></li>
+                    <li><a href="tech-projects.html" class="nav-link">Tech Projects</a></li>
+                </ul>
+                
+                <div class="mb-4">
+                    <div class="mb-3 text-white">
+                        <h4 class="text-sm font-regular mb-1">
+                            Solution <span class="font-bold">24/7</span>
+                        </h4>
+                        <p class="text-xs font-medium">
+                            Reach out & Enquire with US.<br>
+                            Our "Deck Solutions Platform" live 24/7
+                        </p>
+                    </div>
+                    <a href="connect.html" class="btn-primary btn-outline-primary">Connect Us</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#"><img src="http://localhost:3845/assets/e30e7782cbc9e3203d208519be0f419894238a08.svg" alt="Facebook" width="24" height="24"></a>
+                    <a href="#"><img src="http://localhost:3845/assets/c2ebbda49bf0f12f51bfa150a3b93a4043f8fdc7.svg" alt="Instagram" width="24" height="24"></a>
+                    <a href="#"><img src="http://localhost:3845/assets/ef656654c6912e1c7a6dc45502b764dd5b902809.svg" alt="LinkedIn" width="24" height="24"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-section d-none d-lg-block">
+            <div class="container-fluid container-custom">
+                <p class="breadcrumb-text">
+                    <a class="breadcrumb-home" href="index.html"> Home </a> / <span class="current">About Us</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- About Us Content -->
+        <div class="about-page-content">
+            <div class="container-fluid px-3 px-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-12" style="max-width: 1204px;">
+                        
+                        <!-- About Us Hero Section -->
+                        <div class="about-hero">
+                            <h1 class="about-title">About Us</h1>
+                            <p class="about-description">
+                                A unique Business <strong>DECK (platform)</strong> that leverages 
+                                <strong>Product, Services, Deals, Technology & Brand</strong> to unlock & enhance an 
+                                <strong>EXPERIENTIAL VALUE CHAIN</strong> in an extremely 
+                                <strong>macro-based & classy eco-system</strong> to enrich customer satisfaction. 
+                                An exclusive venture represented by expertized Industry Professionals in the 
+                                <strong>Travel, Hospitality</strong> and <strong>Corporate Events</strong> space providing 
+                                <strong>professional</strong> and <strong>turnkey solutions</strong> in:
+                            </p>
+                        </div>
+
+                        <!-- Our Business Services Section -->
+                        <div class="services-section">
+                            <h2 class="services-title">Our Business Services</h2>
+                            
+                            <!-- Desktop Services Grid -->
+                            <div class="services-grid d-none d-lg-grid">
+                                <!-- Row 1 -->
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/2df9363a6c56fd3737ed1e62a4371ce46120de58.png" alt="Corporate Meetings" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Corporate Meetings</h3>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/1983f690ef8c7e923ffa31ba39011661d4b35e72.png" alt="Incentives" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Incentives</h3>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/9ac79ef4b2b526014de706c983b9238ad8e5562c.png" alt="Conferences" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Conferences</h3>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/44be4ecc61b5a5c891cf9cca854c0c338e604082.png" alt="Overseas Trade Exhibitions" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Overseas Trade Exhibitions</h3>
+                                    </div>
+                                </div>
+                                
+                                <!-- Row 2 -->
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/66f79895f13540c99f442c09a2c4e3814ddbae77.png" alt="Luxury Events" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Luxury Events</h3>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/0a9c525fbf234482c82976be9715b1ea7f9996b1.png" alt="Sports and Entertainment Event Reservations and Tours" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Sports and Entertainment Event Reservations and Tours</h3>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/fdd4e87be19a6723a5f3b26d6a0973189ccfd2fa.png" alt="Wellness Programmes" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Wellness Programmes</h3>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/998ff371e8d2fa6ebbafef187298ec6dd95e3fdd.png" alt="Corporate Trainings" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Corporate Trainings</h3>
+                                    </div>
+                                </div>
+                                
+                                <!-- Row 3 -->
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/458da951a4794f15c1e506c4af5a29a7e3fedb98.png" alt="Corporate Gifting aligned with Incentives and Loyalty activities" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Corporate Gifting aligned with Incentives and Loyalty activities</h3>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/a74bc1b01752575941c66511c527c8846660ba2a.png" alt="Inbound Tours" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Inbound Tours</h3>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/129fa3aa5b5ceea8eb54a1e23340e390ec897629.png" alt="Luxury FITs" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Luxury FITs</h3>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/bf0f9f4320e73e29759d05ab4735b85f79990218.png" alt="Destination and Tourism Board Representation" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Destination and Tourism Board Representation</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Mobile Services Scroll -->
+                            <div class="services-grid d-lg-none">
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/2df9363a6c56fd3737ed1e62a4371ce46120de58.png" alt="Corporate Meetings" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Corporate Meetings</h3>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/1983f690ef8c7e923ffa31ba39011661d4b35e72.png" alt="Incentives" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Incentives</h3>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/9ac79ef4b2b526014de706c983b9238ad8e5562c.png" alt="Conferences" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Conferences</h3>
+                                    </div>
+                                </div>
+                                <div class="service-card">
+                                    <img src="http://localhost:3845/assets/44be4ecc61b5a5c891cf9cca854c0c338e604082.png" alt="Overseas Trade Exhibitions" class="service-image">
+                                    <div class="service-overlay">
+                                        <h3 class="service-title">Overseas Trade Exhibitions</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mission & Vision Section -->
+                        <div class="mission-vision-section">
+                            <div class="mission-card">
+                                <div class="mission-vision-header">
+                                    <img src="http://localhost:3845/assets/8538f6324f66eb24755a3fc7e4a5d2196a1bc5ea.svg" alt="Mission Icon" class="mission-vision-icon">
+                                    <h3 class="mission-vision-title">Mission</h3>
+                                </div>
+                                <div class="mission-vision-content">
+                                    <p class="mission-vision-text">
+                                        To make HOSPITALITY SERVICES experiential, enterprising, simpler, delightful, 
+                                        communicative, technology-driven & productive through uniquely innovative engagement by 
+                                        providing ethical, efficient, effective, transparent & sustainable professional services 
+                                        with a quick turnaround response to the Consumer Community.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="vision-card">
+                                <div class="mission-vision-header">
+                                    <img src="http://localhost:3845/assets/7f9620fc2971dbaa0867dbe49395d9fdc8f6f2eb.svg" alt="Vision Icon" class="mission-vision-icon">
+                                    <h3 class="mission-vision-title">Vision</h3>
+                                </div>
+                                <div class="mission-vision-content">
+                                    <p class="mission-vision-text">
+                                        To provide outstanding HOSPITALITY EXPERIENCES by curating inspiring journeys 
+                                        resulting into immersive & elevated experiences through sustainable & quick technology 
+                                        support aligned to the objectives of the Consumer Community.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Geo-Bandwidth Section -->
+                        <div class="geo-bandwidth-section">
+                            <h2 class="geo-title">Geo - Bandwidth</h2>
+                            
+                            <div class="operating-units">
+                                <h3 class="operating-title">Operating Units</h3>
+                                <p class="operating-description">
+                                    Headquartered in Mumbai and are in the process of building Point of Sale (POS) & 
+                                    Customer Interface Offices across the major metros & Tier-II/III locations with a 
+                                    substantially equipped nationwide bandwidth, connect & network
+                                </p>
+                            </div>
+                            
+                            <div class="offices-section">
+                                <h3 class="offices-title">Revenue Interface Offices to be Opened at (Soon)</h3>
+                                <div class="offices-grid">
+                                    <div class="office-card">
+                                        <img src="http://localhost:3845/assets/ef684e1665b2c3325b452d37583dc3b624d9019c.png" alt="Bangalore" class="office-image">
+                                        <div class="office-label">
+                                            <span class="office-name">Bangalore</span>
+                                        </div>
+                                    </div>
+                                    <div class="office-card">
+                                        <img src="http://localhost:3845/assets/4fa2eae6caa16f5319ab302c74af913fd8bb98d0.png" alt="Chennai" class="office-image">
+                                        <div class="office-label">
+                                            <span class="office-name">Chennai</span>
+                                        </div>
+                                    </div>
+                                    <div class="office-card">
+                                        <img src="http://localhost:3845/assets/45a873648f1337a957b466a98f23916bb4fdd6ce.png" alt="Kochi" class="office-image">
+                                        <div class="office-label">
+                                            <span class="office-name">Kochi</span>
+                                        </div>
+                                    </div>
+                                    <div class="office-card">
+                                        <img src="http://localhost:3845/assets/4060d18f6b5f2676cef95aafc708f47999d49de7.png" alt="Kolkata" class="office-image">
+                                        <div class="office-label">
+                                            <span class="office-name">Kolkata</span>
+                                        </div>
+                                    </div>
+                                    <div class="office-card">
+                                        <img src="http://localhost:3845/assets/a4eb8b7247d854092fdee837137b99066f69b3fd.png" alt="Delhi" class="office-image">
+                                        <div class="office-label">
+                                            <span class="office-name">Delhi</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Credentials Section -->
+                        <div class="credentials-section">
+                            <img src="http://localhost:3845/assets/5af35c178a7e73778c195a90d08144b681af3950.png" alt="Government Registration" class="credentials-image">
+                            <div class="credentials-content">
+                                <h2 class="credentials-title">Credentials & Registration with GOI</h2>
+                                <ul class="credentials-list">
+                                    <li>Registered with Registrar of Companies, (ROC)</li>
+                                    <li>GST Registered.</li>
+                                    <li>Registered with IT with a permanent account no (PAN) and a tax deduction account no. (TAN)</li>
+                                    <li>Registered with GOI's (Govt. of India's) Start-up India initiative</li>
+                                    <li>Registered with GOI's (Govt. of India's) MSME project unit.</li>
+                                    <li>IATA Lite certified.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container-fluid px-3 px-lg-4">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-logo-section">
+                    <div class="footer-logo">
+                        <img src="http://localhost:3845/assets/73e1557e1dcb8bb454f92fda2b916837213c401e.png" alt="KapStone Logo">
+                    </div>
+                    <div class="footer-contact">
+                        <img src="http://localhost:3845/assets/7a719448149af82b60695740c747b7f4ae3845c2.svg" alt="Email Icon">
+                        <span class="text-sm">info@kapstonedecksolutions.com</span>
+                    </div>
+                    <div class="social-links d-lg-none">
+                        <img src="http://localhost:3845/assets/e30e7782cbc9e3203d208519be0f419894238a08.svg" alt="Facebook">
+                        <img src="http://localhost:3845/assets/c2ebbda49bf0f12f51bfa150a3b93a4043f8fdc7.svg" alt="Instagram">
+                        <img src="http://localhost:3845/assets/ef656654c6912e1c7a6dc45502b764dd5b902809.svg" alt="LinkedIn">
+                    </div>
+                </div>
+                
+                <div class="footer-right-section">
+                    <div class="social-links d-none d-lg-flex">
+                        <img src="http://localhost:3845/assets/e30e7782cbc9e3203d208519be0f419894238a08.svg" alt="Facebook">
+                        <img src="http://localhost:3845/assets/c2ebbda49bf0f12f51bfa150a3b93a4043f8fdc7.svg" alt="Instagram">
+                        <img src="http://localhost:3845/assets/ef656654c6912e1c7a6dc45502b764dd5b902809.svg" alt="LinkedIn">
+                    </div>
+                    <h3 class="footer-cta-title">
+                        <span class="font-regular">Solution</span> <span class="font-bold">24/7</span>
+                    </h3>
+                    <p class="footer-cta-text">
+                        Reach out & Enquire with US.<br>
+                        Our "Deck Solutions Platform" live 24/7
+                    </p>
+                    <a href="connect.html" class="btn-primary">Connect Us</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="text-sm mb-0">© Copyright 2025. kapSTONE Deck Solution Pvt. Ltd. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="terms.html">Terms and Conditions</a>
+                    <span>|</span>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+                <div class="footer-powered">
+                    <span>Powered by</span>
+                    <img src="http://localhost:3845/assets/cd59e8785c925c8f81cb572035bfb7911a59deb4.svg" alt="Powered by Logo" height="15.676">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

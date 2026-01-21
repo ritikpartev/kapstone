@@ -120,10 +120,24 @@
         </section>
 
         <!-- Main Content Section -->
-        <section class="container-fluid px-3 px-lg-4">
+        <section class="container-fluid px-3 px-lg-0 container-custom">
             <div class="row justify-content-center">
-                <div class="col-12" style="max-width: 1204px;">
-                    
+                <div class="col-12 px-lg-0">
+                    <!-- Mobile Industry Cards -->
+                    <div class="industry-cards d-lg-none mb-4">
+                        <div class="industry-card-tall">
+                            <img src="http://localhost:3845/assets/615dabe3950b08e06f48a9c989eebf0fefc5f54c.png" alt="Travel Industry">
+                            <div class="industry-card-label">Travel</div>
+                        </div>
+                        <div class="industry-card-tall">
+                            <img src="http://localhost:3845/assets/ce797b802c74b1be3ca7afaec0bced50b3481b50.png" alt="Hospitality Industry">
+                            <div class="industry-card-label">Hospitality</div>
+                        </div>
+                        <div class="industry-card-tall">
+                            <img src="http://localhost:3845/assets/fe2de4e30b5e38924cdbceeb448b914c3bc8ee2d.png" alt="Events Industry">
+                            <div class="industry-card-label">Events</div>
+                        </div>
+                    </div>
                     <!-- Content & Industry Cards -->
                     <div class="content-section">
                         <div class="content-text">
@@ -154,22 +168,6 @@
                         </div>
                     </div>
 
-                    <!-- Mobile Industry Cards -->
-                    <div class="industry-cards d-lg-none mb-4">
-                        <div class="industry-card-tall">
-                            <img src="http://localhost:3845/assets/615dabe3950b08e06f48a9c989eebf0fefc5f54c.png" alt="Travel Industry">
-                            <div class="industry-card-label">Travel</div>
-                        </div>
-                        <div class="industry-card-tall">
-                            <img src="http://localhost:3845/assets/ce797b802c74b1be3ca7afaec0bced50b3481b50.png" alt="Hospitality Industry">
-                            <div class="industry-card-label">Hospitality</div>
-                        </div>
-                        <div class="industry-card-tall">
-                            <img src="http://localhost:3845/assets/fe2de4e30b5e38924cdbceeb448b914c3bc8ee2d.png" alt="Events Industry">
-                            <div class="industry-card-label">Events</div>
-                        </div>
-                    </div>
-
                     <!-- Tech Projects Section -->
                     <section class="mb-5">
                         <div class="section-header">
@@ -187,7 +185,9 @@
                                     <div class="tech-project-title">
                                         Institutional Space:<br><strong>MICEdeck</strong>
                                     </div>
-                                    <img src="http://localhost:3845/assets/669bcfe6281b82a1faa37451623ac0ee506a42eb.png" alt="MICEdeck Logo" class="project-logo">
+                                    <div class="tech-project-img">
+                                        <img src="http://localhost:3845/assets/669bcfe6281b82a1faa37451623ac0ee506a42eb.png" alt="MICEdeck Logo" class="project-logo">
+                                    </div>
                                 </div>
                             </div>
                             
@@ -197,7 +197,9 @@
                                     <div class="tech-project-title">
                                         Retail Space:<br><strong>nexTRIP</strong>
                                     </div>
-                                    <img src="http://localhost:3845/assets/3abb48af8de431d009aa16c60245184a98efcb6f.png" alt="nexTRIP Logo" class="project-logo">
+                                    <div class="tech-project-img tech-project-img-full-width">
+                                        <img src="http://localhost:3845/assets/3abb48af8de431d009aa16c60245184a98efcb6f.png" alt="nexTRIP Logo" class="project-logo">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -235,18 +237,18 @@
                     </section>
 
                     <!-- Our Endeavour Section -->
-                    <section class="endeavour-section mb-5">
+                    <section class="endeavour-section">
                         <div class="endeavour-image">
                             <img src="http://localhost:3845/assets/87b120e94cd1c596188d840a68fc04884a8e24e2.png" alt="Our Endeavour" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <div class="endeavour-content">
                             <h2 class="section-title mb-4">Our Endeavour</h2>
                             <ul class="endeavour-list">
-                                <li><span>-</span> <span><strong>Experience</strong> out of all Transactions</span></li>
-                                <li><span>-</span> <span><strong>Memories</strong> out of all Dreams</span></li>
-                                <li><span>-</span> <span><strong>Trust</strong> out of all Deals</span></li>
-                                <li><span>-</span> <span><strong>Emotion</strong> out of all Relation</span></li>
-                                <li><span>-</span> <span><strong>Service</strong> out of all Elements</span></li>
+                                <li><span>-</span> <span class="endeavour-label"><strong>Experience</strong> out of all Transactions</span></li>
+                                <li><span>-</span> <span class="endeavour-label"><strong>Memories</strong> out of all Dreams</span></li>
+                                <li><span>-</span> <span class="endeavour-label"><strong>Trust</strong> out of all Deals</span></li>
+                                <li><span>-</span> <span class="endeavour-label"><strong>Emotion</strong> out of all Relation</span></li>
+                                <li><span>-</span> <span class="endeavour-label"><strong>Service</strong> out of all Elements</span></li>
                             </ul>
                         </div>
                     </section>
@@ -256,6 +258,12 @@
                         <h2 class="section-title mb-4">Strategic Partnerships with</h2>
                         <div class="partnerships-grid">
                             <div class="partnership-card">
+                                <div class="partnership-logo">
+                                    <!-- Vernost Tech Logo SVG will be complex, using placeholder -->
+                                    <svg width="148" height="38" viewBox="0 0 148 38" fill="none">
+                                        <text x="10" y="25" fill="#0560FB" font-family="Arial" font-size="16" font-weight="bold">Vernost</text>
+                                    </svg>
+                                </div>
                                 <div class="partnership-info">
                                     <h3>Venture Wolf</h3>
                                     <p>Fundraising Consultant Partner</p>

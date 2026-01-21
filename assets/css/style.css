@@ -51,6 +51,11 @@
   padding: 0;
 }
 
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin-bottom: 0;
+}
+
 body {
   font-family: 'Google Sans', 'Montserrat', sans-serif;
   font-size: var(--font-size-sm);
@@ -1596,6 +1601,11 @@ button:focus {
   font-size: var(--font-size-lg);
   line-height: var(--line-height-lg);
   color: var(--color-black-gray);
+  font-weight: var(--font-weight-regular);
+}
+
+.founders-description strong{
+    font-weight: var(--font-weight-semibold);
 }
 
 .founding-members-title {
@@ -1655,7 +1665,7 @@ button:focus {
 }
 
 .founder-name-title {
-  margin-bottom: var(--spacing-lg);
+  /* margin-bottom: var(--spacing-lg); */
 }
 
 .founder-name {

@@ -103,6 +103,9 @@ body {
   height: 80px;
   width: auto;
 }
+.logo-container img:focus-visible {
+  outline: none;
+}
 
 .nav-links {
   display: flex;
@@ -249,8 +252,7 @@ body {
 .hero-overlay-text {
   position: absolute;
   bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 30px;
   color: var(--color-white);
   font-size: var(--font-size-3xl);
   line-height: var(--line-height-3xl);

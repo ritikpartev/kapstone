@@ -389,6 +389,9 @@ h1, h2, h3, h4, h5, h6, div, span, p, a, ul, li, button, strong {
 }
 
 /* ===== TECH PROJECTS SECTION ===== */
+.section-head-container{
+  margin-bottom: 60px;
+}
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -423,7 +426,6 @@ h1, h2, h3, h4, h5, h6, div, span, p, a, ul, li, button, strong {
   border-radius: var(--border-radius-lg);
   overflow: hidden;
   background: #444;
-  min-height: 414px;
 }
 
 .tech-project-image {
@@ -535,6 +537,10 @@ h1, h2, h3, h4, h5, h6, div, span, p, a, ul, li, button, strong {
   gap: 20px;
 }
 
+.Partnerships-section{
+  margin-bottom: 100px;
+}
+
 .partnership-card {
   background: var(--color-white);
   padding: var(--spacing-xl);
@@ -542,6 +548,11 @@ h1, h2, h3, h4, h5, h6, div, span, p, a, ul, li, button, strong {
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-xl);
+}
+
+.partnership-logo img {
+  height: 100%;
+  width: 100%;
 }
 
 .partnership-logo {
@@ -706,6 +717,9 @@ h2.section-title.mb-4{
 .section-header{
   margin-bottom: var(--spacing-md);
 }
+.section-head-container{
+  margin-bottom: var(--spacing-xl);
+}
 
   .main-header {
     padding: 8px 16px;
@@ -750,7 +764,7 @@ h2.section-title.mb-4{
   .content-section {
     flex-direction: column;
     gap: var(--spacing-md);
-    padding: 0 var(--spacing-md);
+    padding: 0 0;
     margin-bottom: 32px;
   }
   
@@ -762,6 +776,7 @@ h2.section-title.mb-4{
     width: auto;
     flex: 1;
     height: 90px;
+    border-radius: var(--border-radius-sm);
   }
   
   .industry-cards-group {
@@ -811,6 +826,7 @@ h2.section-title.mb-4{
     padding: var(--spacing-md);
     margin: 0;
     max-width: 190px;
+    border-radius: var(--border-radius-sm);
   }
   
   .tech-project-title {
@@ -858,6 +874,7 @@ h2.section-title.mb-4{
     width: 50%;
     height: 294px;
     margin-right: 0px;
+    border-radius: var(--border-radius-sm);
   }
   
   .endeavour-content {
@@ -866,6 +883,7 @@ h2.section-title.mb-4{
     position: absolute;
     left: 25%;
     width: 70%;
+    border-radius: var(--border-radius-sm);
   }
   .endeavour-label strong{
     font-size: var(--font-size-xs);
@@ -888,6 +906,10 @@ h2.section-title.mb-4{
     flex-direction: column;
     gap: var(--spacing-sm);
     padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+  }
+  .Partnerships-section{
+    margin-bottom: var(--spacing-xl);
   }
   
   .partnership-logo {
@@ -990,17 +1012,19 @@ button:focus {
   max-width: 1204px;
   margin: 0 auto;
   padding: 60px 0;
+  padding-bottom: 100px;
 }
 
 .breadcrumb-section {
-  padding: 0 20px;
-  margin-bottom: 12px;
+  padding: 0 0px;
+  margin-bottom: 0px;
 }
 
 .breadcrumb-text {
   font-size: var(--font-size-xs);
   line-height: var(--line-height-xs);
   color: var(--color-black-gray);
+  padding-top: 12px;
 }
 .breadcrumb-home {
     color: var(--color-black-gray);
@@ -1033,6 +1057,10 @@ button:focus {
   color: var(--color-black-gray);
 }
 
+.about-description strong {
+  font-weight: var(--font-weight-semibold);
+}
+
 .services-section {
   margin-bottom: 60px;
 }
@@ -1042,7 +1070,7 @@ button:focus {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-2xl);
   color: var(--color-black-100);
-  text-align: center;
+  text-align: left;
   margin-bottom: 24px;
 }
 
@@ -1050,7 +1078,7 @@ button:focus {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
 
 .service-card {
@@ -1139,7 +1167,7 @@ button:focus {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-2xl);
   color: var(--color-black-100);
-  text-align: center;
+  text-align: left;
   margin-bottom: 24px;
 }
 
@@ -1151,7 +1179,7 @@ button:focus {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-lg);
-  color: var (--color-black-gray);
+  color: var(--color-black-gray);
   margin-bottom: 8px;
 }
 
@@ -1255,7 +1283,7 @@ button:focus {
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-sm);
   color: var(--color-black-gray);
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   position: relative;
   padding-left: 24px;
 }
@@ -1277,7 +1305,14 @@ button:focus {
     font-size: var(--font-size-lg);
     line-height: var(--line-height-lg);
     margin-bottom: 2px;
+    font-weight: var(--font-weight-medium);
   }
+  .about-hero {
+    margin-bottom: var(--spacing-xl);
+}
+.services-title{
+  display: none;
+}
 
   .about-description {
     font-size: var(--font-size-sm);
@@ -1288,7 +1323,13 @@ button:focus {
     display: flex;
     gap: 8px;
     overflow-x: auto;
-    padding-bottom: 16px;
+    padding-bottom: 0px;
+  }
+  .services-section{
+    margin-bottom: var(--spacing-xl);
+  }
+  .mission-vision-section{
+    margin-bottom: var(--spacing-xl);
   }
 
   .service-card {
@@ -1305,6 +1346,8 @@ button:focus {
 
   .service-title {
     font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+    font-weight: var(--font-weight-bold);
   }
 
   .mission-vision-section {
@@ -1329,6 +1372,7 @@ button:focus {
   .mission-vision-title {
     font-size: var(--font-size-lg);
     line-height: var(--line-height-lg);
+    font-weight: var(--font-weight-semibold);
   }
 
   .mission-vision-content {
@@ -1367,16 +1411,19 @@ button:focus {
   .offices-title {
     width: 100%;
     font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
   }
 
   .offices-grid {
     gap: 8px;
     overflow-x: auto;
+    width: 100%;
   }
 
   .office-card {
     min-width: 100px;
     flex-shrink: 0;
+    padding-bottom: 0;
   }
 
   .office-image {
@@ -1422,6 +1469,7 @@ button:focus {
   max-width: 1204px;
   margin: 0 auto;
   padding: 60px 0;
+  padding-bottom: 100px;
 }
 
 .why-us-hero {
@@ -1442,12 +1490,16 @@ button:focus {
   color: var(--color-black-gray);
 }
 
+.hero-image-wrapper{
+  height: 350px;
+  margin-bottom: 24px;
+}
+
 .hero-image-banner {
   width: 100%;
-  aspect-ratio: 1204/350;
+  height: 100%;
   border-radius: var(--border-radius-lg);
   object-fit: cover;
-  margin-bottom: 24px;
 }
 
 .team-cards-section {
@@ -1468,7 +1520,7 @@ button:focus {
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-2xl);
-  text-align: center;
+  text-align: left;
   margin-bottom: 16px;
 }
 
@@ -1482,7 +1534,7 @@ button:focus {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-sm);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   position: relative;
   padding-left: 24px;
 }
@@ -1503,7 +1555,7 @@ button:focus {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-2xl);
   color: var(--color-black-100);
-  text-align: center;
+  text-align: left;
   margin-bottom: 24px;
 }
 
@@ -1558,7 +1610,7 @@ button:focus {
 .exclusivity-image {
   width: 562px;
   height: 308px;
-  border-radius: var (--border-radius-lg);
+  border-radius: var(--border-radius-lg);
   object-fit: cover;
 }
 
@@ -1579,7 +1631,7 @@ button:focus {
 }
 
 .reverse-row {
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 /* ===== MOBILE WHY US STYLES ===== */
@@ -1591,7 +1643,15 @@ button:focus {
   .why-us-title {
     font-size: var(--font-size-lg);
     line-height: var(--line-height-lg);
+    font-weight: var(--font-weight-medium);
     margin-bottom: 2px;
+  }
+  .why-us-hero{
+    margin-bottom: var(--spacing-xl);
+  }
+  .hero-image-wrapper{
+    height: 160px;
+    margin-bottom: 32px;
   }
 
   .why-us-description {
@@ -1600,9 +1660,8 @@ button:focus {
   }
 
   .hero-image-banner {
-    height: 160px;
+    height: 100%;
     border-radius: var(--border-radius-sm);
-    margin-bottom: 32px;
   }
 
   .team-cards-section {
@@ -1618,13 +1677,17 @@ button:focus {
 
   .team-card-title {
     font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-lg);
+    margin-bottom: 4px;
   }
 
   .team-card-list li {
     font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
     line-height: var(--line-height-xs);
     padding-left: 18px;
+    margin-bottom: 0;
   }
 
   .infra-bandwidth-section {
@@ -1633,7 +1696,10 @@ button:focus {
   }
 
   .infra-title {
+    color: var(--color-black-100);
     font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-sm);
     margin-bottom: 10px;
   }
 
@@ -1641,7 +1707,7 @@ button:focus {
     display: flex;
     gap: 8px;
     overflow-x: auto;
-    padding-bottom: 16px;
+    padding-bottom: 0px;
   }
 
   .infra-card {
@@ -1696,7 +1762,7 @@ button:focus {
   }
 
   .reverse-row {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 
@@ -1986,7 +2052,6 @@ button:focus {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: var(--spacing-xl);
 }
 
 .tech-project-header {
@@ -2174,16 +2239,19 @@ button:focus {
   /* Tech Projects - Mobile */
   .tech-projects-grid {
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
     margin-bottom: var(--spacing-md);
   }
 
   .tech-project-card {
     width: 100%;
-    padding: 24px 16px 0 16px;
+    padding: 0px 0px 0 0px;
     border-radius: var(--border-radius-sm);
     gap: 16px;
     position: relative;
+  }
+  .tech-project-image{
+    height: auto;
   }
 
   .tech-project-header {
@@ -2305,9 +2373,7 @@ button:focus {
 
 /* ===== CONNECT US PAGE STYLES ===== */
 .connect-page-content {
-  max-width: 1204px;
-  margin: 0 auto;
-  padding: 72px 0 100px;
+  padding: 60px 0 100px;
 }
 
 .connect-hero {
@@ -2405,7 +2471,7 @@ button:focus {
 
 .contact-icon {
   background: var(--color-secondary);
-  padding: 8px;
+  padding: 0px;
   border-radius: var(--border-radius-full);
   display: flex;
   align-items: center;
@@ -2416,8 +2482,8 @@ button:focus {
 }
 
 .contact-icon img {
-  width: 24px;
-  height: 24px;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-details {
@@ -2477,7 +2543,7 @@ button:focus {
   }
 
   .connect-image {
-    width: 328px;
+    width: 100%;
     height: 180px;
     border-radius: var(--border-radius-sm);
   }
@@ -2720,6 +2786,6 @@ button:focus {
   .privacy-section-content {
     font-size: var(--font-size-xs);
     line-height: var(--line-height-xs);
-    font-weight: var (--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
 }

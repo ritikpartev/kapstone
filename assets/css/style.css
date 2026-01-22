@@ -596,8 +596,8 @@ h1, h2, h3, h4, h5, h6, div, span, p, a, ul, li, button, strong {
 }
 
 .footer-contact img {
-  width: 20px;
-  height: 15px;
+  width: 22px;
+  height: auto;
 }
 
 .footer-right-section {

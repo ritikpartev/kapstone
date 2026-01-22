@@ -419,11 +419,11 @@ h1, h2, h3, h4, h5, h6, div, span, p, a, ul, li, button, strong {
 
 .tech-project-card {
   position: relative;
-  height: 394.6672px;
+  height: max-content;
   border-radius: var(--border-radius-lg);
   overflow: hidden;
   background: #444;
-  min-height: 414px;
+  /* min-height: 414px; */
 }
 
 .tech-project-image {
@@ -1987,6 +1987,7 @@ button:focus {
   flex-direction: column;
   gap: 24px;
   padding: var(--spacing-xl);
+  padding-bottom: 0;
 }
 
 .tech-project-header {
@@ -2054,7 +2055,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  /* padding-bottom: 24px; */
+  padding-bottom: 24px;
   align-self: flex-start ;
 }
 

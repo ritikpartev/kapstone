@@ -249,6 +249,7 @@ h1, h2, h3, h4, h5, h6, div, span, p, a, ul, li, button, strong {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  width: max-content;
 }
 
 .btn-primary:hover {
@@ -422,6 +423,7 @@ h1, h2, h3, h4, h5, h6, div, span, p, a, ul, li, button, strong {
   border-radius: var(--border-radius-lg);
   overflow: hidden;
   background: #444;
+  min-height: 414px;
 }
 
 .tech-project-image {
@@ -1984,6 +1986,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding: var(--spacing-xl);
 }
 
 .tech-project-header {
@@ -2019,8 +2022,8 @@ button:focus {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-lg);
-  width: 230px;
-  text-align: center;
+  min-width: 230px;
+  text-align: left;
 }
 
 .project-tag strong {
@@ -2051,7 +2054,8 @@ button:focus {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-bottom: 24px;
+  /* padding-bottom: 24px; */
+  align-self: flex-start ;
 }
 
 .project-description {
@@ -2176,7 +2180,7 @@ button:focus {
 
   .tech-project-card {
     width: 100%;
-    padding: 0px 0px 0;
+    padding: 24px 16px 0 16px;
     border-radius: var(--border-radius-sm);
     gap: 16px;
     position: relative;
@@ -2233,7 +2237,7 @@ button:focus {
   }
 
   .project-image {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     right: 0;
     width: 155px;

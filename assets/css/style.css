@@ -2710,7 +2710,7 @@ button:focus {
 /* Privacy Content Card */
 .privacy-content-card {
   background: var(--color-white);
-  padding: 24px 40px 24px 32px;
+  padding: 24px 40px 24px 40px;
   border-radius: var(--border-radius-lg);
   display: flex;
   flex-direction: column;

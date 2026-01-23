@@ -2029,7 +2029,6 @@ button:focus {
   width: 100%;
   height: 400px;
   margin-bottom: 60px;
-  padding-bottom: 102px;
 }
 
 .tech-hero-image img {
@@ -2054,6 +2053,15 @@ button:focus {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.techprojectswrapper .tech-project-card{
+  padding: 24px;
+  padding-bottom: 0;
+}
+
+.techprojectswrapper .project-content-wrapper{
+  min-height: 220px;
 }
 
 .tech-project-header {
@@ -2230,7 +2238,6 @@ button:focus {
   .tech-hero-image {
     height: 200px;
     margin-bottom: 32px;
-    padding-bottom: 99px;
   }
 
   .tech-hero-image img {
@@ -2371,6 +2378,9 @@ button:focus {
     line-height: var(--line-height-sm);
     font-weight: var(--font-weight-bold);
   }
+  .techprojectswrapper .project-content-wrapper{
+  min-height: unset;
+}
 }
 
 /* ===== CONNECT US PAGE STYLES ===== */

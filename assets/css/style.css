@@ -2641,11 +2641,11 @@ button:focus {
     width: 30px;
     height: 30px;
   }
-
+/* 
   .contact-icon img {
     width: 20px;
     height: 20px;
-  }
+  } */
 
   .contact-details {
     font-size: var(--font-size-xs);

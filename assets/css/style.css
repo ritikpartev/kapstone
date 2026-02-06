@@ -1575,7 +1575,7 @@ strong {
     gap: 8px;
     overflow-x: auto;
     width: 100%;
-    width: calc(100% + 30px);
+    /* width: calc(100% + 30px); */
   }
 
   .office-card {
